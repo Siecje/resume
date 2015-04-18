@@ -1,0 +1,125 @@
+% LaTeX file for resume
+% This file uses the resume document class (res.cls)
+\documentclass[margin]{res}
+
+% the margin option causes section titles to appear to the left of body text
+\textwidth=5.2in % increase textwidth to get smaller right margin
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    allcolors = {blue}
+}
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+\moveleft.5\hoffset\centerline{\large\bf Cody Scott}
+% Website Link
+\moveleft.5\hoffset\centerline{\url{http://siecje.github.io/}}
+
+% Draw a horizontal line the whole width of resume:
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+\moveleft.5\hoffset\centerline{cody.j.b.scott@gmail.com}
+
+\begin{resume}
+
+\section{Education}
+\textbf{\textsl{Honours Bachelor of Science, Computer Science}} \hfill Sept. 2010 - Apr. 2015 \\
+\href{http://www.lakeheadu.ca/}{Lakehead University}
+
+\section{Work Experience}
+\textbf{\textsl{Full Stack Developer}} \hfill Jan. 2013 - Present \\
+\href{http://windriver.com/}{Wind River Systems}
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Created Internal and Customer Facing Websites
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+  \item Python/Django/Flask
+  \item PHP/Drupal/Zend
+  \item JavaScript/NodeJS/AngularJS
+ \end{itemize}
+ \item Administered Linux Servers
+   \begin{itemize} \itemsep -2pt
+     \item Email, Database Engines (MySQL, SQLite, PostgreSQL, MongoDB)
+     \item Apache2, Nginx, uWSGI
+   \end{itemize}
+ \end{itemize}
+
+\textbf{\textsl{Web Developer (Contract)}} \hfill Dec. 2013 - Jan. 2014 \\
+\href{http://www.nwoinnovation.ca/}{Northwestern Ontario Innovation Centre}
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Thunder Bay Talent Directory
+ \item Worked with Python/Django, MySQL, jQuery
+ \end{itemize}
+
+\section{Technical Skills}
+\textbf{\textsl{Languages:}}
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Python, C, C++
+\item JavaScript, SQL, HTML, CSS
+\end{itemize}
+\textbf{\textsl{Technologies:}}
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item PostgreSQL, MySQL, SQLite
+\item REST, JSON
+\item jQuery, \href{https://angularjs.org/}{AngularJS}, \href{http://aurelia.io/}{Aurelia}
+\item \href{http://expressjs.com/}{Express}
+\item \href{https://www.djangoproject.com/}{Django}, \href{http://flask.pocoo.org/}{Flask}
+\item Git, SVN
+\item Amazon AWS, \href{https://www.heroku.com/}{Heroku}
+\item Apache2, Nginx, uWSGI
+\item PostgresSQL, MongoDB
+\item Node.js, \href{http://nwjs.io/}{NW.js}
+\end{itemize}
+
+\section{Personal Open Source Projects}
+
+\textbf{\textsl{Genesis}} \hfill March 2015 - Present \\
+\url{https://github.com/Siecje/genesis}
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Desktop Client for Static Sites
+\item Create pages and blog posts
+\item One step deployment
+\item Using NW.js (formerly node-webkit), io.js, Harp
+\end{itemize}
+
+\textbf{\textsl{Hashword}} \hfill March 2015 - Present \\
+\url{https://github.com/Siecje/hashword}
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Password Manager
+\item Using a single master password and a site identifier
+\item create unique, random passwords
+\item Using NW.js (formerly node-webkit), io.js, HTML5
+\end{itemize}
+
+\textbf{\textsl{Htmd}} \hfill Oct. 2014 - Present \\
+\url{https://github.com/Siecje/htmd}
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Static Site Generator
+\item Create webpages and blog posts in markdown
+\item Live preview
+\item Easily deploy to any static webserver (Dropbox, GitHub Pages, Surge)
+\item Using Python, Flask, Jinja2, Frozen-Flask, Flask-Flatpages
+\end{itemize}
+
+\textbf{\textsl{Due Dates}} \hfill Sept. 2013 \\
+\url{http://due-dates.herokuapp.com/} \\
+\url{https://bitbucket.org/Siecje/due-dates}
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Course and Assignment Management System
+\item Assignment Calendar, Mark Calculator
+\item Using Python, Django, PostgreSQL, Gunicorn, Heroku, Ajax
+\item Responsive Layout
+\end{itemize}
+
+\end{resume}
+\end{document}
