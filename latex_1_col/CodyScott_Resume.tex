@@ -19,18 +19,35 @@
 % Website Link
 \moveleft.5\hoffset\centerline{\url{http://siecje.github.io/}}
 
-% Draw a horizontal line the whole width of resume:
-\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
 % address begins here
 % Again, the address lines must be centered over entire width of resume:
-%\moveleft.5\hoffset\centerline{email}
-%\moveleft.5\hoffset\centerline{phone number}
+\moveleft.5\hoffset\centerline{cody.j.b.scott@gmail.com}
+
+% Draw a horizontal line the whole width of resume:
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
 
 \begin{resume}
 
 \section{Work Experience}
-\textbf{\textsl{Programmer (Employee \#2)}} \hfill July 2015 - Present \\
-\textsl{Perspexis Technologies INC.}
+
+\textbf{\textsl{Senior Web Developer}} \hfill Jan 2019 - Present \\
+\textsl{Giatec Scientific Inc.}
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Backend
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+  \item Python
+  \item Django, Flask
+  \item REST, GraphQL
+  \item Kubernetes, Docker
+ \end{itemize}
+ \item Frontend
+   \begin{itemize} \itemsep -2pt
+     \item Angular JavaScript Framework
+   \end{itemize}
+ \end{itemize}
+
+\textbf{\textsl{Programmer (Employee \#2)}} \hfill July 2015 - Dec 2018 \\
+\textsl{Perspexis Technologies Inc.}
  \begin{itemize} \itemsep -2pt  % reduce space between items
  \item Backend
  \begin{itemize} \itemsep -2pt  % reduce space between items
@@ -66,80 +83,15 @@
  \end{itemize}
  \item Administered Linux Servers
    \begin{itemize} \itemsep -2pt
-     \item Email, Databases (MySQL, SQLite, PostgreSQL, MongoDB)
+     \item Email
+     \item LDAP
+     \item Databases (MySQL, SQLite, PostgreSQL, MongoDB)
    \end{itemize}
  \end{itemize}
 
-\textbf{\textsl{Web Developer (Contract)}} \hfill Dec. 2013 - Jan. 2014 \\
-\href{http://www.nwoinnovation.ca/}{Northwestern Ontario Innovation Centre}
- \begin{itemize} \itemsep -2pt  % reduce space between items
-   \item Thunder Bay Talent Directory
-   \begin{itemize} \itemsep -2pt  % reduce space between items
-    \item Python, Django, MySQL, jQuery
-   \end{itemize}
- \end{itemize}
-
- \section{Education}
- \textbf{\textsl{Honours Bachelor of Science, Computer Science}} \hfill Sept. 2010 - Apr. 2015 \\
- \href{http://www.lakeheadu.ca/}{Lakehead University}
-
-\section{Technical Skills}
-\textbf{\textsl{Languages:}}
-\begin{itemize}
-\renewcommand\labelitemi{--}
-\item Python, JavaScript, Bash
-\end{itemize}
-\textbf{\textsl{Technologies:}}
-\begin{itemize}
-\renewcommand\labelitemi{--}
-\item PostgreSQL
-\item \href{https://www.djangoproject.com/}{Django}, \href{http://flask.pocoo.org/}{Flask}
-\item Git, Mercurial, SVN
-\end{itemize}
-
-\section{Personal Open Source Projects}
-
-\textbf{\textsl{Genesis}} \\
-\url{https://github.com/Siecje/genesis}
-\begin{itemize}
-\renewcommand\labelitemi{--}
-\item Desktop Client for Static Sites
-\item Create pages and blog posts
-\item One step deployment
-\item Using NW.js (formerly node-webkit), io.js, Harp
-\end{itemize}
-
-\textbf{\textsl{Hashword}} \\
-\url{https://github.com/Siecje/hashword}
-\begin{itemize}
-\renewcommand\labelitemi{--}
-\item Password Manager
-\item Using a single master password and a site identifier
-\item Create unique and random passwords
-\item Using NW.js (formerly node-webkit), io.js, HTML5
-\end{itemize}
-
-\textbf{\textsl{Htmd}} \\
-\url{https://github.com/Siecje/htmd}
-\begin{itemize}
-\renewcommand\labelitemi{--}
-\item Static Site Generator
-\item Create webpages and blog posts in markdown
-\item Live preview
-\item Easily deploy to any static webserver (Dropbox, GitHub Pages, Surge)
-\item Using Python, Flask, Jinja2, Frozen-Flask, Flask-Flatpages
-\end{itemize}
-
-\textbf{\textsl{Due Dates}} \\
-\url{http://due-dates.herokuapp.com/} \\
-\url{https://bitbucket.org/Siecje/due-dates}
-\begin{itemize}
-\renewcommand\labelitemi{--}
-\item Course and Assignment Management System
-\item Assignment Calendar, Mark Calculator
-\item Using Python, Django, PostgreSQL, Gunicorn, Heroku, Ajax
-\item Responsive Layout
-\end{itemize}
+\section{Education}
+\textbf{\textsl{Honours Bachelor of Science, Computer Science}} \hfill Sept. 2010 - Apr. 2015 \\
+\href{http://www.lakeheadu.ca/}{Lakehead University}
 
 \end{resume}
 \end{document}
